@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: hsl(30, 38%, 92%);
+}
+main {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  width: 450px;
+}
+
+.img1 {
+  border-radius: 10px 0 0 10px;
+  height: 400px;
+  width: 233px;
+}
+h5 {
+  font-weight: 200;
+}
+.content {
+  margin: 20px;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer > p {
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+button {
+  background-color: rgb(62, 128, 105);
+  color: white;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  main {
+    flex-direction: column;
+    width: 350px;
+    margin-left: 20px;
+  }
+  .img1 {
+    border-radius: 10px 10px 0 0;
+    height: 300px;
+    width: 330px;
+  }
+}
